@@ -5,8 +5,7 @@ using namespace std;
 
 int main (){
 
-    float Weight, BMI;
-    float Height;
+    float Weight, BMI, Height;
 
     cout << "Program Initializing..."<<endl <<endl;
 

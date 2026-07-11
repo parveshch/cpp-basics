@@ -5,13 +5,33 @@ using namespace std;
 
 int main (){
 
-    int t;
-    cout << endl << "We have 7 values of weight in (kg) as integers, input numbers between 0 to 6 to get any oof the output."<<endl;
-    cin >> t;
-    
-    int weight[] ={40, 68, 86, 73, 105, 34, 45};
+int marks[] = {89, 88, 94, 75, 79, 33, 99};
 
-    cout << "The output value of weight is: "<< weight[t] << " kg" <<endl;
+string name[] = {"ajit", "rohit", "bhawna", "mittul", "shubham"};
+
+
+int t;
+
+cout << endl << "Array containing Marks, and size allocated in the ram: " << endl;
+
+for (int t=0; t<7; t++) {
+
+    cout << marks[t] << " with the size of: " << sizeof(marks[t]) <<" bytes."<< endl;
+
+}
+
+
+
+cout << endl << "Array containing Name, and size allocated in the ram: " << endl;
+
+for (int t=0; t<6; t++){
+
+    cout << name[t] << " with the size of: " << sizeof(name[t]) <<" bytes."<< endl;
+}
+
+
+
+
 
 return 0;
 }

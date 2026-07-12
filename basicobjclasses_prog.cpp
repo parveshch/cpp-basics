@@ -1,19 +1,23 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
 
 
 class bankacc{
 
+
     public:
         string name, fathersname, acctype;
         int pincode;
 
+        
+
+    
+
         void showPublicData(){
 
-            cout << endl << "Account Holder: "<< name << endl << "Father's Name: " << fathersname << endl << "Account Type: " << acctype
-            << endl << "Pincode: " << pincode << endl ;
+
+          cout << endl << "Account Holder: "<< name << endl << "Father's Name: " << fathersname << endl << "Account Type: " << acctype
+            << endl << "Pincode: " << pincode << endl;
         }
 
     private:
@@ -25,48 +29,48 @@ class bankacc{
     };
     
 
+    
+
 int main (){
 
-    string getAccNo;
+    int t, i;
 
-    bankacc acc74101;
+    bankacc accno[100];
 
-    acc74101.name = "PRIYANSHU";
-    acc74101.fathersname = "RAJINDER KUMAR";
-    acc74101.acctype = "CURRENT";
-    acc74101.pincode = 152122;
+    accno[0].name = "PRIYANSHU";
+    accno[0].fathersname = "RAJINDER KUMAR";
+    accno[0].acctype = "CURRENT";
+    accno[0].pincode = 152122;
 
 
-    bankacc acc74102;
-
-    acc74102.name = "SHUBHAM";
-    acc74102.fathersname = "SHUBHASH CHANDER";
-    acc74102.acctype = "SAVING";
-    acc74102.pincode = 152123;
+    accno[1].name = "SHUBHAM";
+    accno[1].fathersname = "SHUBHASH CHANDER";
+    accno[1].acctype = "SAVING";
+    accno[1].pincode = 152123;
 
 
     //acc74101.showPublicData();
     //acc74102.showPublicData();
 
 
-    cout << "Enter Your Bank Account No. (Including the prefix - acc)"<< endl;
-    cin >> getAccNo;
+    cout<< "Enter Your Ac. No."<<endl;
+    cin>>t;
 
+    if (t>2 || t<0){
+
+        cout<<"Account Not Found";
     
 
-    if (getAccNo == "acc74101"){
-        acc74101.showPublicData();
     }
-    
-    else if(getAccNo == "acc74102"){
-        acc74102.showPublicData();
-    }
-
-
     else{
-    cout << "Account Not Found!";
+
+        accno[t].showPublicData();
+
+       
+
     }
 
+    
 
 
     

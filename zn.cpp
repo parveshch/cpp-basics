@@ -23,5 +23,6 @@ int main (){
     alto_price = 2,00,000;
 
 
+
 return 0;
 }
